@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Hecho por: CARLOS ANDRÉ RAMÍREZ ACOSTA
+    Clave única: 288083
+    Fecha: 18/02/2026
+    Materia: APLICACIONES WEB INTERACTIVAS
+    Profesor: VARELA TRISTAN GERARDO ANTONIO
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+    <nav class="sticky top-0 z-50 bg-black/10 backdrop-blur-sm flex items-center px-8 py-2">
+        <i class="fa-brands fa-github text-4xl px-1 text-blue-500"></i>
+        <a href="https://github.com/Andr3Rmz" class="text-2xl"
+            style="font-family: 'Space Mono', monospace;">Andr3Rmz</a>
+        <div class="ml-auto flex items-center gap-3">
+            <button class="text-2xl fi fi-us" title="English"></button>
+            <button class="text-2xl fi fi-mx" title="Español"></button>
+            <input type="checkbox" name="" id="">
+        </div>
+    </nav>
+
+    <div class="container mx-auto py-20 px-4 md:px-16">
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg p-6 flex flex-col">
+                <span class="text-blue-400 text-xl" style="font-family: 'Share Tech Mono', monospace;">Desarrollador
+                    Jr</span>
+                <h1 class="text-4xl md:text-7xl font-bold" style="font-family: 'Space Mono', monospace;">Carlos André
+                    Ramírez Acosta</h1>
+                <p class="text-gray-400 text-lg">Desarrollador de software con experiencia en el desarrollo de
+                    aplicaciones web
+                    y móviles. Apasionado por la tecnología y la innovación. Busco constantemente aprender nuevas
+                    tecnologías y mejorar mis habilidades como desarrollador.
+                </p>
+                <div class="mt-auto flex gap-3 pt-4">
+                    <button onclick="document.getElementById('contact-modal').classList.remove('hidden')"
+                        class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors">Contáctame</button>
+                    <button class="px-4 py-2 rounded-lg border border-gray-600">Ver proyectos <i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </div>
+            </div>
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg p-6 md:w-fit md:shrink-0">
+                <div>
+                    <h3 class="text-gray-400 text-lg" style="font-family: 'Share Tech Mono', monospace;">Estadisticas
+                    </h3>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-2xl font-black text-cyan-300"
+                        style="font-family: 'Space Mono', monospace;">20</span>
+                    <i class="fa-solid fa-file text-cyan-300 text-2xl"></i>
+
+                </div>
+                <span class="text-gray-400 text-lg mb-4 text-xl"
+                    style="font-family: 'Rationale' , sans-serif;">Proyectos
+                    Finalizados</span>
+                <div class="flex justify-between">
+                    <span class="text-2xl font-black text-blue-400"
+                        style="font-family: 'Space Mono', monospace;">2</span>
+                    <i class="fa-solid fa-calendar text-blue-400 text-2xl"></i>
+                </div>
+                <span class="text-gray-400 text-lg mb-4 text-xl" style="font-family: 'Rationale' , sans-serif;">Años
+                    de
+                    experiencia</span>
+                <div class="flex justify-between">
+                    <span class="text-2xl font-black text-purple-400"
+                        style="font-family: 'Space Mono', monospace;">5</span>
+                    <i class="fa-solid fa-code text-purple-400 text-2xl"></i>
+                </div>
+                <span class="text-gray-400 text-lg mb-4 text-xl"
+                    style="font-family: 'Rationale' , sans-serif;">Lenguajes de
+                    programación</span>
+            </div>
+        </div>
+
+
+
+
+        <div class="flex flex-col md:flex-row gap-4 my-4">
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg flex-1 relative overflow-hidden min-h-64">
+                <img class="w-full h-full object-cover absolute inset-0"
+                    src="https://www.godaddy.com/resources/latam/wp-content/uploads/sites/4/pagina-web.jpg"
+                    alt="Sistema de gestión escolar">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                    <div class="flex gap-2 mb-2">
+                        <span class="text-blue-400 bg-blue-400/20 rounded-lg px-2 py-1 text-sm">Laravel</span>
+                        <span class="text-purple-400 bg-purple-400/20 rounded-lg px-2 py-1 text-sm">Tailwind CSS</span>
+                    </div>
+                    <h2 class="text-2xl font-bold">Sistema de gestión escolar</h2>
+                    <p class="text-gray-400 text-lg">Aplicación web para gestionar estudiantes, materias y
+                        calificaciones.</p>
+                </div>
+            </div>
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg p-6">
+                <h1 class="text-gray-400 text-lg mb-6" style="font-family: 'Share Tech Mono', monospace;">Experiencia
+                </h1>
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fa-brands fa-js text-4xl text-yellow-500"></i>
+                        <span class="text-gray-400 text-sm">JavaScript</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fa-brands fa-php text-4xl text-indigo-400"></i>
+                        <span class="text-gray-400 text-sm">PHP</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fa-brands fa-python text-4xl text-blue-500"></i>
+                        <span class="text-gray-400 text-sm">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fa-solid fa-database text-4xl text-blue-400"></i>
+                        <span class="text-gray-400 text-sm">MySQL</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fa-brands fa-laravel text-4xl text-red-500"></i>
+                        <span class="text-gray-400 text-sm">Laravel</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="flex gap-1">
+                            <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
+                            <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
+                        </div>
+                        <span class="text-gray-400 text-sm">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 my-4">
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg p-6 flex-1">
+                <h2 class="text-2xl font-bold" style="font-family: 'Quicksand', sans-serif;">Laboratorio</h2>
+                <span class="text-gray-400 text-lg">Proyectos realizados: <span
+                        class="text-blue-400 font-black text-2xl" style="font-family: 'Space Mono', monospace;">7
+                    </span>
+                </span>
+                <p class="text-gray-400 text-lg">En esta sección se muestran los proyectos que he desarrollado a lo
+                    largo de mi
+                    carrera como
+                    desarrollador de software.</p>
+            </div>
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg p-6 flex-1">
+                <h3 class="text-2xl font-bold" style="font-family: 'Quicksand', sans-serif;">Gestión de proyectos</h3>
+                <p class="text-gray-400">Aplicación web para gestionar proyectos.</p>
+            </div>
+            <div class="bg-gray-900 border-2 border-gray-800 rounded-lg p-6 flex-1">
+                <h3 class="text-2xl font-bold" style="font-family: 'Quicksand', sans-serif;">Colaboración en equipo</h3>
+                <p class="text-gray-400">Aplicación web para gestionar proyectos.</p>
+            </div>
+        </div>
+
+
+        <!-- Modal de Contacto -->
+        <div id="contact-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+            <!-- Overlay -->
+            <div onclick="document.getElementById('contact-modal').classList.add('hidden')"
+                class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+            <!-- Contenido -->
+            <div class="relative bg-gray-900 border border-gray-700 rounded-xl shadow-2xl w-full max-w-md p-6 z-10">
+                <!-- Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-bold text-white">Contáctame</h3>
+                    <button onclick="document.getElementById('contact-modal').classList.add('hidden')"
+                        class="text-gray-400 hover:text-white transition-colors p-1 rounded-lg hover:bg-gray-800">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+                <!-- Formulario -->
+                <form onsubmit="handleContactSubmit(event)">
+                    <div class="mb-4">
+                        <label class="block text-gray-400 text-sm mb-1" for="contact-name">Nombre</label>
+                        <input type="text" id="contact-name" placeholder="Tu nombre completo" required
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-400 text-sm mb-1" for="contact-email">Correo electrónico</label>
+                        <input type="email" id="contact-email" placeholder="tucorreo@ejemplo.com" required
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-400 text-sm mb-1" for="contact-subject">Asunto</label>
+                        <input type="text" id="contact-subject" placeholder="¿En qué puedo ayudarte?" required
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors">
+                    </div>
+                    <!-- Footer -->
+                    <div class="flex gap-3 justify-end">
+                        <button type="button" onclick="document.getElementById('contact-modal').classList.add('hidden')"
+                            class="px-4 py-2 rounded-lg border border-gray-600 text-gray-300 hover:bg-gray-800 transition-colors">Cancelar</button>
+                        <button type="submit"
+                            class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-colors">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            function handleContactSubmit(e) {
+                e.preventDefault();
+
+                const name = document.getElementById('contact-name').value;
+                const email = document.getElementById('contact-email').value;
+                const subject = document.getElementById('contact-subject').value;
+
+                const submitBtn = e.target.querySelector('[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>Enviando...';
+
+                $.ajax({
+                    url: 'https://cors-anywhere.herokuapp.com/https://diane-domesticable-eliz.ngrok-free.dev/enviar',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    headers: {
+                        'ngrok-skip-browser-warning': true,
+                    },
+                    data: JSON.stringify({
+                        nombre: name,
+                        correo: email,
+                        asunto: subject,
+                    }),
+                    success: function (response) {
+                        console.log('Respuesta de la API:', response);
+                        alert(`¡Gracias, ${name}! Tu mensaje ha sido enviado correctamente.`);
+                        document.getElementById('contact-modal').classList.add('hidden');
+                        e.target.reset();
+                    },
+                    error: function (error) {
+                        console.error('Error al enviar:', error);
+                        alert('Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.');
+                    },
+                    complete: function () {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane mr-2"></i>Enviar';
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>
